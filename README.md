@@ -3,6 +3,12 @@ Create entry on SRX User-Authentication-Table mapped from an EX-Series DHCP Serv
 
 The script needs to be updated to provide the correct entries for ex/srx hostname (or IP-Address), username and password values. 
 
+Ensure you have the following dependencies installed, pyez, jxmlease and lxml
+
+pip install jxmlease
+pip install lxml
+pip install junos-eznc
+
 # EX-Series configuration example 
 ```
 set system services dhcp static-binding 92:a2:da:f0:0f:12 fixed-address 192.168.0.130  
